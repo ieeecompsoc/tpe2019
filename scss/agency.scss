@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    height: 100vh;
     background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -175,7 +176,7 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 150px;
         padding-bottom: 50px;
         .intro-lead-in {
             @include serif-font;
@@ -189,7 +190,14 @@ header {
             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
-            margin-bottom: 25px;
+            margin-bottom: 100px;
+        }
+        .btn {
+            width: 40%;
+            font-size: 1.5rem;
+        }
+        .btn-xl {
+            padding: 20px 5%;
         }
     }
 }
@@ -197,7 +205,7 @@ header {
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
+            padding-top: 200px;
             padding-bottom: 200px;
             .intro-lead-in {
                 @include serif-font;
@@ -212,6 +220,10 @@ header {
                 font-size: 75px;
                 line-height: 75px;
                 margin-bottom: 50px;
+            }
+            .btn {
+                font-size: auto;
+                width: auto;
             }
         }
     }
