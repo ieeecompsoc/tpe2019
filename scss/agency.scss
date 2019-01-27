@@ -541,6 +541,11 @@ section {
 aside.clients {
     img {
         margin: 50px auto;
+        height: 100px;
+        filter: grayscale(0%);
+    }
+    img:hover {
+        filter: grayscale(100%);
     }
 }
 

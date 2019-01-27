@@ -443,7 +443,11 @@ section {
     margin-top: 0; }
 
 aside.clients img {
-  margin: 50px auto; }
+  margin: 50px auto;
+  height: 100px;
+  filter: grayscale(0%); }
+aside.clients img:hover {
+  filter: grayscale(100%); }
 
 section#contact {
   background-color: #222222;
